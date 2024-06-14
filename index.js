@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const data = await response.json();
                 allHolidayData.push(data);
                 // Add a delay of 1 second between each fetch request
-                await new Promise(resolve => setTimeout(resolve, 1000));
+                await new Promise(resolve => setTimeout(resolve, 900));
             }
             displayHolidays(allHolidayData);
         } catch (error) {
